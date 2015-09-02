@@ -1,0 +1,20 @@
+
+.pwHeader{
+	display: inline-block; }
+	.pwHeader form {
+		display: inline-block;
+		vertical-align:top;
+		margin-top:50px;
+		text-align: center; }
+	.pwHeader .searchBox {
+		width: 475px;
+		font-size:larger; }
+	.pwHeader .searchButton {
+		font-size:large;
+		width: 60px; }
+	.pwHeader .uploadWarning {
+		display:block;
+		text-align:left;
+		font-size:small;
+		margin-left:20px; }
+
