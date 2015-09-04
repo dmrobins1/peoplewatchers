@@ -34,9 +34,12 @@
 			display:block;
 			text-align: center;}
 		.pwHeader .uploadButton {
+			background-color: #5CABF3;
 			display:inline-block;
 			text-align: center;
-			font-size: xx-large}
+			color: white;
+			font-size: large;
+			border-radius: 5px; }
 
 	.pwHeader .userProfile {
 		display:inline-block;
