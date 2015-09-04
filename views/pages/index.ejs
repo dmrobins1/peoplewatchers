@@ -6,12 +6,22 @@
 
 <body>
 	<div class="pwHeader">
-		<image src="pwlogo.png">
-		<form>
-			<input class="searchBox" type="text" placeholder="Search..." required>
-			<input class="searchButton type="button" value="Search">
-			<span class="uploadWarning">Only videos or pictures taken in a public place may be uploaded.</span>
-		</form>
+		<image class="pwLogo" src="pwlogo.png">
+
+        <div class="searchAndUpload">
+            <form>
+			    <input class="searchBox" type="text" placeholder="Search..." required>
+			    <input class="searchButton type="button" value="Search">
+			    <span class="uploadWarning">Only videos or pictures taken in a public place may be uploaded.</span>
+		    </form>
+            <image class="imgCloudUpload" src="uploadToCloud.png">
+            <span class="uploadNowText">Upload your pictures and video now.</span>
+            <div class="dragAndDrop">
+                <span class=>Drag and drop your files on the cloud above or</span>
+                <input class="uploadButton" type="button" value="Upload Now">
+            </div>
+        </div>
+
 		<div class="userProfile">
 			<image src="unknownUser.png" class="userImage">
 			<a href="" class="userName">Sign In </a>

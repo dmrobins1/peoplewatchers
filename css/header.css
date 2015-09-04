@@ -1,31 +1,52 @@
 
 .pwHeader{
 	display: inline-block; }
-	.pwHeader form {
+	.pwHeader .pwLogo {
+		vertical-align:top;
+		width: 15%; }
+
+	.pwHeader .searchAndUpload {
 		display: inline-block;
 		vertical-align:top;
 		margin-top:50px;
 		text-align: center; }
-	.pwHeader .searchBox {
-		width: 475px;
-		font-size:larger; }
-	.pwHeader .searchButton {
-		font-size:large;
-		width: 60px; }
-	.pwHeader .uploadWarning {
-		display:block;
-		text-align:left;
-		font-size:small;
-		margin-left:20px; }
+		.pwHeader .searchBox {
+			width: 475px;
+			font-size:larger; }
+		.pwHeader .searchButton {
+			font-size:large;
+			width: 60px; }
+		.pwHeader .uploadWarning {
+			display:block;
+			text-align:left;
+			font-size:small;
+			margin-left:20px; }
+		.pwHeader .imgCloudUpload {
+			display:block;
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto}
+		.pwHeader .uploadNowText {
+			display:block;
+			text-align: center;}
+		.pwHeader .dragAndDrop {
+			margin-top:15px;
+			display:block;
+			text-align: center;}
+		.pwHeader .uploadButton {
+			display:inline-block;
+			text-align: center;
+			font-size: xx-large}
+
 	.pwHeader .userProfile {
 		display:inline-block;
 		vertical-align:top;
 		margin-top:15px;
 		margin-left:50px; }
-	.pwHeader .userImage {
-		vertical-align:top;
-		width: 30%; }
-	.pwHeader .userName {
-		display:block;
-		margin-left: 6px;}
+		.pwHeader .userImage {
+			vertical-align:top;
+			width: 30%; }
+		.pwHeader .userName {
+			display:block;
+			margin-left: 6px;}
 
