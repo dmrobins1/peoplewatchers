@@ -23,7 +23,8 @@
 			margin-left:20px; }
 		.pwHeader .imgCloudUpload {
 			display:block;
-			margin-top: 30px;
+			margin-top: 20px;
+			width: 25%;
 			margin-left: auto;
 			margin-right: auto}
 		.pwHeader .uploadNowText {
@@ -52,4 +53,30 @@
 		.pwHeader .userName {
 			display:block;
 			margin-left: 6px;}
+
+.trending{
+	display: block;
+	margin-top: -30px;}
+	.trending .trendingNowText {
+		margin-left: 40px;
+		text-align:inherit;
+		font: italic bold 16px sans-serif;
+		color: coral; }
+	.trending .trendingImages {
+		margin-left: 40px;
+		display: inline-block; }
+	.trending .trendingImage {
+		height: 150px;
+		margin-top: 5px;
+		margin-left: 18px;}
+
+
+
+hr {
+	margin-left: 42px;
+	margin-right: 40px;
+	border: 0;
+	height: 0;
+	box-shadow: 0 0 10px 1px cornflowerblue; }
+
 
