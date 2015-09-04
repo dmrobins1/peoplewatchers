@@ -20,6 +20,12 @@
 	.pwHeader .userProfile {
 		display:inline-block;
 		vertical-align:top;
-		margin-top:50px;
-		margin-left:20px; }
+		margin-top:15px;
+		margin-left:50px; }
+	.pwHeader .userImage {
+		vertical-align:top;
+		width: 30%; }
+	.pwHeader .userName {
+		display:block;
+		margin-left: 6px;}
 
