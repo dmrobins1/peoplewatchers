@@ -17,4 +17,9 @@
 		text-align:left;
 		font-size:small;
 		margin-left:20px; }
+	.pwHeader .userProfile {
+		display:inline-block;
+		vertical-align:top;
+		margin-top:50px;
+		margin-left:20px; }
 
