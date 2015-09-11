@@ -1,10 +1,10 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.5",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
+  "name": "peoplewatchers",
+  "version": "0.1.0",
+  "description": "peoplewatchers Node.js app using Express 4",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "ejs": "2.3.3",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/dmrobins1/peoplewatchers.git"
   },
   "keywords": [
     "node",
