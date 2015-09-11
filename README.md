@@ -21,8 +21,8 @@ This application supports the PeopleWatchers web site.
 - Make sure that your heroku account has rights to the heroku peoplewatchers app
 - Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed
 - In a terminal window:
-$ heroku git:clone -a peoplewatchers
-$ cd peoplewatchers
+* $ heroku git:clone -a peoplewatchers
+* $ cd peoplewatchers
 $ npm install
 $ npm start
 - In a separate terminal window (in the peoplewatchers folder you created)
