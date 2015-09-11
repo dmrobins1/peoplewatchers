@@ -21,15 +21,15 @@ This application supports the PeopleWatchers web site.
 - Make sure that your heroku account has rights to the heroku peoplewatchers app
 - Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed
 - In a terminal window:
-* $ heroku git:clone -a peoplewatchers
-* $ cd peoplewatchers
-$ npm install
-$ npm start
+  - $ heroku git:clone -a peoplewatchers
+  - $ cd peoplewatchers
+  - $ npm install
+  - $ npm start
 - In a separate terminal window (in the peoplewatchers folder you created)
 start node.js running the peoplewatchers app:
-$ node server.js
+  - $ node server.js
 - You can use forever if you want to automatically have the server restart when changes are made to the app
-$ forever -w server.js
+  - $ forever -w server.js
 - Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 ===========================
