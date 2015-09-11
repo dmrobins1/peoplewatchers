@@ -54,6 +54,9 @@ start node.js running the peoplewatchers app:
 - Pull any remote changes from the remote to your current branch
   - $ git pull
 - Resolve any conflicts...
+- Commit merges
+- Push your local branch to github
+  - $ git push origin master
 - Push a branch to Heroku
   - $ git push heroku master
 - You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
