@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="791656e0-17ab-44a0-8638-2c6133ade17a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i/crazyCatLadyStarterKit.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i/dog_vs_rhino.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i/madKid.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i/windFace.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/header.css" afterPath="$PROJECT_DIR$/css/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/index.ejs" afterPath="$PROJECT_DIR$/views/pages/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="peoplewatchers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,8 +107,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.688826">
-              <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.8585573">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -489,8 +481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.688826">
-          <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.8585573">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
           <folding />
         </state>
       </provider>

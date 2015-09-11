@@ -32,12 +32,6 @@ $ node server.js
 $ forever -w server.js
 - Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-- You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
-$ heroku open
-
-===========================
-## Deploying to Heroku from Mac
-
 ===========================
 ## Running locally on Windows
 - Make sure you have [Node.js](http://nodejs.org/) installed
@@ -54,15 +48,17 @@ start node.js running the peoplewatchers app:
 > node server.js
 - Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-- You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
-> heroku open
-
-
-
+===========================
 ## Deploying to Heroku
-
-```
-$ heroku create
+- From a terminal window (in the peoplewatchers folder)
+- Add your changes to git
+$ git add .
+- Commit your changes to git on your current branch with a comment of "I made some awesome changes"
+$ git commit -m "I made some awesome changes"
+- Pull any remote changes from the remote to your current branch
+$ git pull
+- Resolve any conflicts...
+- Push a branch to Heroku
 $ git push heroku master
+- You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
 $ heroku open
-```
