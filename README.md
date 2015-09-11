@@ -1,7 +1,7 @@
 # PeopleWatchers
 
 A peoplewatchers Node.js app using [Express 4](http://expressjs.com/).
-The peoplewatchers uses a MVC framework with a ejs viewengine.
+The peoplewatchers uses a MVC framework with a ejs view engine.
 
 =========================
 The main server file is /server.js
