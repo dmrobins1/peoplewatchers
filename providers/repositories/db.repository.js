@@ -18,16 +18,14 @@ dbRepository.getTrending = function() {
 
 dbRepository.getMediaWithId = function(mediaId) {
     var mediaObject;
+
     mediaTable.some(function(mediaEntry) {
         if (mediaEntry.index == mediaId) {
-            mediaObject = new mediaDomainObject();
-            mediaObject.index = mediaEntry.index;
-            mediaObject.file = mediaEntry.file;
-            mediaObject.viewCount = mediaEntry.viewCount;
-            mediaObject.tags = mediaEntry.tags;
+            mediaObject = mediaEntry;
            return true;
         }
     });
+
     return mediaObject;
 }
 
