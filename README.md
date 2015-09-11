@@ -5,11 +5,11 @@ The peoplewatchers uses a MVC framework with a ejs viewengine.
 
 =========================
 The main server file is /server.js
-Controllers and routes are in the separate controller files in the/Controllers folder
-Models are in the /Models folder
-Views are in the /Views folder. The view files have a .ejs extension in order to work
-with the ejs view engine framework. There is a /Views/pages folder for full views and
-/Views/partials for partial reusable views.
+Controllers and routes are in the separate controller files in the /controllers folder
+Models are in the /models folder
+Views are in the /views folder. The view files have a .ejs extension in order to work
+with the ejs view engine framework. There is a /views/pages folder for full views and
+/views/partials for partial reusable views.
 
 This application supports the PeopleWatchers web site.
 
@@ -62,3 +62,8 @@ $ git pull
 $ git push heroku master
 - You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
 $ heroku open
+
+===========================
+## Using Heroku repository with SourceTree
+- If you drag the PeopleWatchers folder from a finder or a explorer windows onto the mac dock or the
+windows toolbar SourceTree icon, it will create a bookwark to the Heroku peoplewatchers repository
