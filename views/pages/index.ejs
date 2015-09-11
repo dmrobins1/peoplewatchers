@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="header.css">
-</head>
+<head></head>
 
 <body>
-	<div class="pwHeader">
-		<image class="pwLogo" src="pwlogo.png">
+    <% include ../partials/header %>
 
-        <div class="searchAndUpload">
+    <div class="searchAndUpload">
+        <div class="searchBox">
             <form>
-			    <input class="searchBox" type="text" placeholder="Search..." required>
-			    <input class="searchButton type="button" value="Search">
-			    <span class="uploadWarning">Only videos or pictures taken in a public place may be uploaded.</span>
-		    </form>
-            <image class="imgCloudUpload" src="uploadToCloud.png">
-            <span class="uploadNowText">Upload your pictures and video now.</span>
-            <div class="dragAndDrop">
-                <span class=>Drag and drop your files on the cloud above or</span>
-                <input class="uploadButton" type="button" value="Upload Now">
+                <input class="searchBox" type="text" placeholder="Search..." required>
+                <input class="searchButton" type="button" value="Search"/>
+                <span class="uploadWarning">Only videos or pictures taken in a public place may be uploaded.</span>
+            </form>
+            <div class="upload">
+                <image class="imgCloudUpload" src="uploadToCloud.png">
+                <span class="uploadNowText">Upload your pictures and video now.</span>
+                <div class="dragAndDrop">
+                    <span class=>Drag and drop your files on the cloud above or click </span>
+                    <input class="uploadButton" type="button" value="Upload Now">
+                </div>
             </div>
         </div>
+    </div>
 
-		<div class="userProfile">
-			<image src="unknownUser.png" class="userImage">
-			<a href="" class="userName">Sign In </a>
-		</div>
-	</div>
+
 	
 	<br/>
 	<br/>
@@ -37,10 +34,10 @@
         <span class="trendingNowText">Trending now!</span>
         <hr/>
         <div class = "trendingImages">
-            <image src="crazyCatLadyStarterKit.jpeg" class="trendingImage">
-            <image src="madKid.jpeg" class="trendingImage">
-            <image src="dog_vs_rhino.jpg" class="trendingImage">
-            <image src="windFace.jpeg" class="trendingImage">
+            <a href="/media/19876543"><image src="19876543.jpeg" class="trendingImage"></a>
+            <a href="/media/19876544"><image src="19876544.jpeg" class="trendingImage"></a>
+            <a href="/media/19876545"><image src="19876545.jpg" class="trendingImage"></a>
+            <a href="/media/19876546"><image src="19876546.jpeg" class="trendingImage"></a>
         </div>
         <hr/>
 

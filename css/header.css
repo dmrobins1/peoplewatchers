@@ -1,58 +1,67 @@
 
-.pwHeader{
-	display: inline-block; }
+.pwHeader {
+	width: 100%; }
 	.pwHeader .pwLogo {
+		float: left;
 		vertical-align:top;
-		width: 15%; }
-
-	.pwHeader .searchAndUpload {
-		display: inline-block;
-		vertical-align:top;
-		margin-top:50px;
-		text-align: center; }
-		.pwHeader .searchBox {
-			width: 475px;
-			font-size:larger; }
-		.pwHeader .searchButton {
-			font-size:large;
-			width: 60px; }
-		.pwHeader .uploadWarning {
-			display:block;
-			text-align:left;
-			font-size:small;
-			margin-left:20px; }
-		.pwHeader .imgCloudUpload {
-			display:block;
-			margin-top: 20px;
-			width: 25%;
-			margin-left: auto;
-			margin-right: auto}
-		.pwHeader .uploadNowText {
-			display:block;
-			text-align: center;}
-		.pwHeader .dragAndDrop {
-			margin-top:15px;
-			display:block;
-			text-align: center;}
-		.pwHeader .uploadButton {
-			background-color: #5CABF3;
-			display:inline-block;
-			text-align: center;
-			color: white;
-			font-size: large;
-			border-radius: 5px; }
-
+		width: 20%; }
 	.pwHeader .userProfile {
-		display:inline-block;
-		vertical-align:top;
-		margin-top:15px;
-		margin-left:50px; }
-		.pwHeader .userImage {
-			vertical-align:top;
-			width: 30%; }
-		.pwHeader .userName {
+		float: right;
+		width: 8%;
+		vertical-align:top;}
+		.userImage {
+			width: 100%;}
+		.userName {
 			display:block;
-			margin-left: 6px;}
+			text-align: center;}
+
+.searchAndUpload {
+		display: block;
+		vertical-align:top;
+		margin-top:20px;
+		margin-left: auto;
+		margin-right: auto;}
+	.searchAndUpload .searchBox {
+		display: inline-block;
+		text-align: left;
+		font-size: large;
+		width: 60%;}
+	.searchAndUpload .searchButton {
+		display:inline-block;
+		background-color: #5CABF3;
+		color: white;
+		font-size: large;
+		border-radius: 5px;}
+	.searchAndUpload .uploadWarning {
+		display:block;
+		text-align:left;
+		font-size:small;
+		margin-left:20px; }
+
+	.searchAndUpload .upload {
+		display:block;
+		margin-top: auto;
+		width: 66%;}
+	.searchAndUpload .imgCloudUpload {
+		display:block;
+		margin-top: 20px;
+		margin-left:auto;
+		margin-right:auto;}
+	.uploadNowText {
+		display:block;
+		text-align: center;}
+	.dragAndDrop {
+		margin-top:15px;
+		text-align: center;}
+	.uploadButton {
+		background-color: #5CABF3;
+		display:inline-block;
+		text-align: center;
+		color: white;
+		font-size: large;
+		border-radius: 5px; }
+
+
 
 .trending{
 	display: block;

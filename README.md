@@ -1,23 +1,63 @@
-# node-js-getting-started
+# PeopleWatchers
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A peoplewatchers Node.js app using [Express 4](http://expressjs.com/).
+The peoplewatchers uses a MVC framework with a ejs viewengine.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+=========================
+The main server file is /server.js
+Controllers and routes are in the separate controller files in the/Controllers folder
+Models are in the /Models folder
+Views are in the /Views folder. The view files have a .ejs extension in order to work
+with the ejs view engine framework. There is a /Views/pages folder for full views and
+/Views/partials for partial reusable views.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+This application supports the PeopleWatchers web site.
 
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+==========================
+## Running locally on Mac
+- Make sure you have [Node.js](http://nodejs.org/) installed
+- Make sure you have npm installed
+- Make sure that you have a heroku account
+- Make sure that your heroku account has rights to the heroku peoplewatchers app
+- Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed
+- In a terminal window:
+$ heroku git:clone -a peoplewatchers
+$ cd peoplewatchers
 $ npm install
 $ npm start
-```
+- In a separate terminal window (in the peoplewatchers folder you created)
+start node.js running the peoplewatchers app:
+$ node server.js
+- You can use forever if you want to automatically have the server restart when changes are made to the app
+$ forever -w server.js
+- Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+- You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
+$ heroku open
+
+===========================
+## Deploying to Heroku from Mac
+
+===========================
+## Running locally on Windows
+- Make sure you have [Node.js](http://nodejs.org/) installed
+- Make sure you have npm installed
+- Make sure that you have a heroku account
+- Make sure that your heroku account has rights to the heroku peoplewatchers app
+- Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed
+- In a command prompt:
+> heroku git:clone -a peoplewatchers
+> cd peoplewatchers
+> npm install
+- In a separate terminal window (in the peoplewatchers folder you created)
+start node.js running the peoplewatchers app:
+> node server.js
+- Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+- You can open the version of the peoplewatchers app that is deployed to heroku in your default browser:
+> heroku open
+
+
 
 ## Deploying to Heroku
 
@@ -26,13 +66,3 @@ $ heroku create
 $ git push heroku master
 $ heroku open
 ```
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)

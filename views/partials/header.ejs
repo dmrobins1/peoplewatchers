@@ -1,5 +1,14 @@
-<title>Getting Started</title>
-<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+<link rel="stylesheet" type="text/css" href="/header.css">
+<div class="pwHeader">
+    <a href="/"><image class="pwLogo" src="/pwlogo.png"></a>
+    <div class="userProfile">
+        <a href="" class="userName">
+            <image src="/unknownUser.png" class="userImage">
+                <% if (userProfile.IsAuthenticated) { %>
+                    <span><%=userProfile.UserName%></span>
+                <% } else { %>
+                    <span><%=userProfile.SignInText%></span>
+                <% } %>
+        </a>
+    </div>
+</div>
