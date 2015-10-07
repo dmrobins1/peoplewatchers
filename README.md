@@ -29,6 +29,10 @@ start node.js running the peoplewatchers app:
 - You can use forever if you want to automatically have the server restart when changes are made to the app
   - $ forever -w server.js
 - Your app should now be running on [localhost:5000](http://localhost:5000/).
+- I am using the atom index
+- I am liking the node-inspector debugger:
+   - npm install -g node-inspector
+   - then start node with node-debug server.js
 
 ## Running locally on Windows
 - Make sure you have [Node.js](http://nodejs.org/) installed

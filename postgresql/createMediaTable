@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS t_media (
+   id serial PRIMARY KEY,
+   file varchar(64) NOT NULL,
+   uploadfilename varchar(255) NOT NULL,
+   uploadtimestamp timestamp DEFAULT now(),
+   views int DEFAULT 0,
+   rate5 int DEFAULT 0,
+   rate4 int DEFAULT 0,
+   rate3 int DEFAULT 0,
+   rate2 int DEFAULT 0,
+   rate1 int DEFAULT 0,
+   rate0 int DEFAULT 0,
+   tags varchar(1024)
+  );

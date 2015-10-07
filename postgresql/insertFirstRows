@@ -1,0 +1,5 @@
+INSERT INTO t_media (file, uploadfilename)
+    VALUES('76bd5eed-cf8a-4733-87c9-66afec0008ce.jpeg', '1.jpeg'),
+    ('96258735-820f-4bfb-8691-c74db51897ef.jpeg', '2.jpeg'),
+    ('68eeb8bd-2fa2-4523-837b-7bef78ce8fe4.jpg', '3.jpg'),
+    ('2a114de4-6ae6-4cf8-a82b-038f62b5864a.jpeg', '4.jpeg');

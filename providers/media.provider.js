@@ -5,8 +5,17 @@ function mediaProvider() {
 
 }
 
-mediaProvider.getMediaWithId = function(mediaId) {
-    return db.getMediaWithId(mediaId);
+
+mediaProvider.addMedia = function(media, callback) {
+    db.addMedia(media, callback);
+}
+
+mediaProvider.getMediaWithId = function(mediaId, callback) {
+    db.getMediaWithId(mediaId, callback);
+}
+
+mediaProvider.getTrendingMedia = function(callback) {
+    db.getTrendingMedia(callback);
 }
 
 module.exports = mediaProvider;

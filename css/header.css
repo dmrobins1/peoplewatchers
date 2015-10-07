@@ -25,7 +25,7 @@
 		display: inline-block;
 		text-align: left;
 		font-size: large;
-		width: 60%;}
+		width: 70%;}
 	.searchAndUpload .searchButton {
 		display:inline-block;
 		background-color: #5CABF3;
@@ -47,12 +47,38 @@
 		margin-top: 20px;
 		margin-left:auto;
 		margin-right:auto;}
-	.uploadNowText {
-		display:block;
-		text-align: center;}
+
 	.dragAndDrop {
 		margin-top:15px;
+		text-align: center;
+		display:none; }
+
+
+	.uploadNow {
+		display:inline-block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;}
+	.uploadMediaText {
 		text-align: center;}
+	.formUpload{
+		display: inline-block;
+		padding-top: 35px;}
+	.formUploadInput {
+		height: 0;
+		width: 0; }
+	.formUploadButton {
+		padding: 2px 6px 3px;
+		border: 2px outset buttonface;
+		background-color: #5CABF3;
+		border-radius: 5px;
+		color: white;
+		font: 11px '.HelveticaNeueDeskInterface-Regular';
+		font-size: large;
+		cursor: pointer;
+		3px}
+
+
 	.uploadButton {
 		background-color: #5CABF3;
 		display:inline-block;
@@ -65,9 +91,9 @@
 
 .trending{
 	display: block;
-	margin-top: -30px;}
+	margin-top: 30px;}
 	.trending .trendingNowText {
-		margin-left: 40px;
+		margin-left: 10px;
 		text-align:inherit;
 		font: italic bold 16px sans-serif;
 		color: coral; }
@@ -89,5 +115,3 @@ hr {
 	border: 0;
 	height: 0;
 	box-shadow: 0 0 10px 1px cornflowerblue; }
-
-

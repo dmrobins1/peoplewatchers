@@ -7,18 +7,21 @@ var mediaDomainObject = require('../domainObjects/media.js');
 module.exports.controller = function(app) {
 
     //.....Media routes......
-    app.get('/media/:mediaId', ViewMediaItem);
+    app.get('/media/:mediaId', viewMediaItem);
 }
 
-//...Home page action method...
-function ViewMediaItem(request, response) {
-    var userProfile = new User();
+//...Media page action method...
+function viewMediaItem(request, response) {
     var mediaId = request.params.mediaId;
-    var media = mediaProvider.getMediaWithId(mediaId);
+    mediaProvider.getMediaWithId(mediaId, viewMediaItemRender);
 
-    var mediaViewModel = {
-        userProfile: userProfile,
-        mediaFile: media.file};
+    function viewMediaItemRender(media) {
+        var userProfile = new User();
 
-    response.render('pages/media', mediaViewModel);
+        var mediaViewModel = {
+            userProfile: userProfile,
+            mediaFile: media.file};
+
+            response.render('pages/media', mediaViewModel);
+    }
 }

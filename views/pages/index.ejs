@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
 
 <body>
+
+    <!-- <script type="text/javascript" src="../js/index.js" /> -->
+
+
+
     <% include ../partials/header %>
 
     <div class="searchAndUpload">
@@ -13,9 +20,24 @@
                 <span class="uploadWarning">Only videos or pictures taken in a public place may be uploaded.</span>
             </form>
             <div class="upload">
-                <image class="imgCloudUpload" src="uploadToCloud.png">
-                <span class="uploadNowText">Upload your pictures and video now.</span>
+
+                <form method="post" enctype="multipart/form-data" action="/upload" class ="uploadOnlyForm">
+                      <div class="formUploadOnly">
+                          <image class="imgCloudUpload" src="uploadToCloud.png">
+                          <div class="uploadNow">
+                              <span class="uploadMediaText">Upload your pictures and video now.</span>
+                              <div class="formUpload">
+                                  <input class="formUploadInput" type="file" name="image">
+                                  <span class="formUploadButton">Upload Now</span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- <input type="submit" value="upload"> -->
+                </form>
+
                 <div class="dragAndDrop">
+                    <image class="imgCloudUpload" src="uploadToCloud.png">
+                    <span class="uploadNowText">Upload your pictures and video now.</span>
                     <span class=>Drag and drop your files on the cloud above or click </span>
                     <input class="uploadButton" type="button" value="Upload Now">
                 </div>
@@ -24,7 +46,7 @@
     </div>
 
 
-	
+
 	<br/>
 	<br/>
 	<br/>
@@ -34,16 +56,41 @@
         <span class="trendingNowText">Trending now!</span>
         <hr/>
         <div class = "trendingImages">
-            <a href="/media/19876543"><image src="19876543.jpeg" class="trendingImage"></a>
-            <a href="/media/19876544"><image src="19876544.jpeg" class="trendingImage"></a>
-            <a href="/media/19876545"><image src="19876545.jpg" class="trendingImage"></a>
-            <a href="/media/19876546"><image src="19876546.jpeg" class="trendingImage"></a>
+            <% trending.forEach(function(trendingItem) { %>
+                <% if (typeof trendingItem !== 'undefined') { %>
+                    <a href="/media/<%=trendingItem.id %>"><image src="<%=trendingItem.file%>" class="trendingImage"></a>
+                <% } %>
+            <% }); %>
         </div>
         <hr/>
 
     </div>
 
 	<!--<div>Browse categories</div>-->
-	
+
+
+<script type="text/javascript" >
+  $(function() {
+
+    var uploadOnlyButton = $(".formUploadButton");
+    var uploadOnlyForm = $(".uploadOnlyForm");
+    var uploadButton = $(".formUploadInput");
+
+    uploadOnlyButton.click(function(){
+        uploadButton.click();
+    });
+
+    uploadButton.change(function(){
+        uploadOnlyForm.submit();
+    });
+
+  });
+</script>
+
 </body>
+
+
+
+
+
 </html>
